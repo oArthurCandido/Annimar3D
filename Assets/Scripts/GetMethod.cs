@@ -31,7 +31,6 @@ public class GetMethod : MonoBehaviour
         outputArea.text = request.error;
       else
         outputArea.text = request.downloadHandler.text;
-      Debug.Log(request.downloadHandler.text);
     }
   }
 

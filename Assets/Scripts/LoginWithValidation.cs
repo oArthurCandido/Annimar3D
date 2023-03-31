@@ -20,7 +20,6 @@ public class LoginWithValidation : MonoBehaviour
   {
     string nomeDeUsuario = nomeDeUsuarioInputField.text;
     string senha = senhaInputField.text;
-    Debug.Log("O nome de usuário inserido foi: " + nomeDeUsuario + " e a senha inserida foi: " + senha);
 
     if (nomeDeUsuario == "annimar@annimar.com" && senha == "123456")
     {
@@ -28,8 +27,7 @@ public class LoginWithValidation : MonoBehaviour
     }
     else
     {
-      validationFailedoutputArea.text = ("O nome de usuário inserido é inválido!");
-      Debug.Log("O nome de usuário inserido é inválido!");
+      validationFailedoutputArea.text = ("Nome de usuário e/ou senha incorretos!");
     }
   }
 }
